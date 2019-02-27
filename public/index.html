@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" href="https://www.pm.org/images/camel_30w.png">
+
+  <!-- Site Properties -->
+  <title>Ankara Perl Mongers</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+
+  <link rel="stylesheet" type="text/css" href="css/container.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/image.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="css/divider.css">
+  <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="css/segment.css">
+  <link rel="stylesheet" type="text/css" href="css/button.css">
+  <link rel="stylesheet" type="text/css" href="css/list.css">
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/transition.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/visibility.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+
+    <div class="ui text container">
+      <img class="ui inverted header centered large circular image" src="img/ankarapm.png">
+      <h1 class="ui inverted header" style="margin-top:0px;">Perl Mongers Ankara</h1>
+      
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Perl Mongers?</h3>
+          <p><a href="https://www.pm.org/">Perl Mongers</a>, uluslararası Perl Kullanıcı Gruplarının serbest bir bileşimidir. Çoğu durumda belirli bir yerde Perl ile ilgili konuları tartışmak için periyodik olarak bir araya gelen Perl kullanıcılarının oluşturdukları gruplardır.</p>
+          <h3 class="ui header">Ankara Perl Mongers?</h3>
+          <p><a href="https://www.perl.org/">Perl</a> programlama dilini seven bir grup insanız. Düzenli toplantılar yapmak, bilgi paylaşmak, yardımcı olmak ve ilgili konular da tartışmak için toplantılarımıza bekliyoruz. Sosyal ve teknik toplantılarımız <a href="https://www.meetup.com/tr-TR/Ankara-Perl-Mongers/">Meetup grubumuz</a> aracılığı ile organize edilmektedir. Ayrıca <a href="http://mail.pm.org/mailman/listinfo/ankara-pm">eposta listemiz</a> aracılığı ile veya belirtilen alternatifler üzerinden bize ulaşabilirsiniz.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="img/header_camel.png" class="ui large image" style="border-right:1px solid black;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3><i class="black calendar icon"></i>Etkinlikler</h3>
+          <p><a href="https://www.meetup.com/tr-TR/Ankara-Perl-Mongers/">Meetup Grubu</a></p>
+          <p><a href="https://www.meetup.com/tr-TR/Ankara-Perl-Mongers/events/">Meetup Takvimi</a></p>
+          <p><a href="https://www.meetup.com/tr-TR/Ankara-Perl-Mongers/events/rss/">Meetup RSS</a></p>
+        </div>
+        <div class="column">
+          <h3><i class="black mail icon"></i>İletişim</h3>
+          <p>Eposta Listesine üye olmak veya üyeliğiniz ile ilgili bilgileri değiştirmek için <a href="http://mail.pm.org/mailman/listinfo/ankara-pm">adresine</a> gidebilirsiniz.</p>
+          <p>Ayrıca <a href="mailto:ankara-pm@pm.org">ankara-pm@pm.org</a> adresinden iletişime geçebilirsiniz.</p>
+          <p><a href="https://gitter.im/Ankara-Perl-Mongers">Gitter</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical segment">
+    <div class="ui text container centered">
+      <h3 class="ui header centered">Bülten Aboneliği</h3>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="https://ankara.us16.list-manage.com/subscribe/post?u=bfe8b517af3e212551f2d3cc2&amp;id=b0be90fcc6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ui form" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="field">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          </div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ui button primary"></div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment" style="margin-top:30px;">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Bitti sandınız ama biz daha yeni geldik!</h4>
+          <a href="https://www.pm.org" class="ui medium image"><img src="https://www.pm.org/images/title.png" alt="perl-mongers"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
