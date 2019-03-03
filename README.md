@@ -1,1 +1,1 @@
-Herhangi bir katkı yapmaktan çekinmeyin!
+Ankara Perl Mongers.
